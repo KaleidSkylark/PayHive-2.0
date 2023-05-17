@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "583926712093",
+    "firebase_url": "https://payhive-wallet-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    "project_id": "payhive-wallet",
+    "storage_bucket": "payhive-wallet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583926712093:android:3a1388775f6da058cb83f4",
+        "android_client_info": {
+          "package_name": "com.skylark.payhive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583926712093-p44r4725q4glc0qdk740ol0aqf35if2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFY069cMJBOiwAFTmcOdSvklHmCR4T5h4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583926712093-p44r4725q4glc0qdk740ol0aqf35if2q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

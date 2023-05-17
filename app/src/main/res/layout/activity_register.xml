@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:paddingVertical="0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/payhive_logo_front" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/activity_register_create_account"
+        android:paddingVertical="0sp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_layout_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogo"
+        app:layout_constraintVertical_bias="0.45">
+
+        <EditText
+            android:id="@+id/InputFullName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/login_edittext_backgrouand"
+            android:fontFamily="@font/baloo"
+            android:hint="@string/activity_register_full_name_hint"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/InputRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/login_edittext_backgrouand"
+            android:fontFamily="@font/baloo"
+            android:hint="@string/activity_register_email_hint"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/InputPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/login_edittext_backgrouand"
+            android:fontFamily="@font/baloo"
+            android:hint="@string/activity_register_phone_number_hint"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/InputRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/login_edittext_backgrouand"
+            android:fontFamily="@font/baloo"
+            android:hint="@string/activity_register_password_hint"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/RegisterProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:layout_below="@id/InputRegisterPassword"
+            app:trackColor="@color/Honey"
+            app:trackCornerRadius="5dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/Honey"
+                android:fontFamily="@font/baloo"
+                android:text="@string/activity_register_register_button"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="12sp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/baloo"
+                android:text="@string/activity_register_already_have_account"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="5sp"
+                android:backgroundTint="@color/Honey"
+                android:fontFamily="@font/baloo"
+                android:text="@string/activity_register_login_button"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="12sp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="3dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <!--    About App-->
+    <string name="app_name">PayHive</string>
+    <!--Main Layout-->
+    <!--Login Activity-->
+    <string name="login_your_account">Login your account</string>
+    <string name="email_hint">Eメール</string>
+    <string name="password_hint">パスワード</string>
+    <string name="show_password">パスワードを表示</string>
+    <string name="login_button_text">ログイン</string>
+    <string name="dont_have_account">アカウントをお持ちでない場合は、</string>
+    <string name="create_account_button_text">アカウントを作成する</string>
+
+    <!--Register Activity-->
+    <string name="activity_register_create_account">アカウントを作成する</string>
+    <string name="activity_register_full_name_hint">フルネーム</string>
+    <string name="activity_register_email_hint">Eメール</string>
+    <string name="activity_register_phone_number_hint">電話番号</string>
+    <string name="activity_register_password_hint">パスワード</string>
+    <string name="activity_register_register_button">登録</string>
+    <string name="activity_register_already_have_account">すでにアカウントをお持ちですか？</string>
+    <string name="activity_register_login_button">ログイン</string>
+    <!--Fragment Wallet-->
+    <string name="totalbalance_TextView">全体のバランス</string>
+    <string name="fragment_wallet_assets">資産</string>
+    <!--Exchange Activity-->
+    <string name="fragment_exchange_cashin_button">現金で</string>
+    <string name="fragment_exchange_transfer_button">移行</string>
+    <string name="fragment_exchange_transaction_history">取引履歴</string>
+
+    <!--Settings Activity-->
+    <string name="fragment_settings_general">一般設定</string>
+    <string name="fragment_settings_editprofile">プロファイル編集</string>
+    <string name="fragment_settings_language">言語</string>
+    <string name="fragment_settings_about">私たちに関しては</string>
+    <string name="fragment_settings_termsandcondi">規約と条件</string>
+    <string name="fragment_settings_privacypolicy">プライバシーポリシー</string>
+    <string name="fragment_settings_logout_button">ログアウト</string>
+
+</resources>

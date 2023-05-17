@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/Background"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle_background"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:fontFamily="@font/baloo"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="PayHive" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/Honey"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/welcome_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/Honey"
+            android:fontFamily="@font/baloo"
+            android:layout_gravity="center"
+            android:paddingVertical="0sp"
+            android:text="Close"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:cornerRadius="12sp"
+            app:strokeColor="@color/red"
+            app:strokeWidth="3dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

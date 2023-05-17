@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/rectangle_background"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleTextColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:rotation="270"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/arrow"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                <View
+                    android:layout_width="29dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/fragment_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:text="About Us"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="88dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle_background"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <!-- App logo -->
+                <ImageView
+                    android:id="@+id/app_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/payhive_logo_front"/>
+
+                <!-- App version as subtitle -->
+                <TextView
+                    android:id="@+id/app_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/app_logo"
+                    android:layout_marginTop="8dp"
+                    android:text="Version 2.0"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"/>
+
+                <!-- App description -->
+                <TextView
+                    android:id="@+id/app_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/app_version"
+                    android:layout_marginTop="8dp"
+                    android:text="PayHive is a cutting-edge crypto wallet app designed to simplify digital transactions and make payments effortless. Our innovative interface and powerful security features provide a seamless and secure user experience for all your crypto transactions. With PayHive, you can easily store, send, receive, and exchange your digital assets. Our team is dedicated to delivering a convenient and hassle-free service that makes managing your crypto assets enjoyable. Join the buzzing digital wallet revolution today with PayHive!"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"/>
+
+                <ImageView
+                    android:id="@+id/email_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/app_description"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/email" />
+
+                <ImageView
+                    android:id="@+id/facebook_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/facebook"
+                    android:layout_below="@id/app_description"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/email_icon"
+                    android:layout_marginStart="32dp"
+                    />
+
+                <!-- Twitter link icon -->
+                <ImageView
+                    android:id="@+id/twitter_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/twitter"
+                    android:layout_below="@id/app_description"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/facebook_icon"
+                    android:layout_marginStart="32dp"
+                    />
+
+                <!-- Github link icon -->
+                <ImageView
+                    android:id="@+id/github_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/github"
+                    android:layout_below="@id/app_description"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/twitter_icon"
+                    android:layout_marginStart="32dp"
+                    />
+
+                <!-- Group name -->
+                <TextView
+                    android:id="@+id/group_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/github_icon"
+                    android:text="The Hive"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <!-- Group members -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/group_name"
+                    android:layout_marginTop="16dp">
+
+                    <!-- First member -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="8dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/member_1_picture"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:src="@drawable/amit"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Dexter Amit"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/baloo"
+                            android:textSize="14sp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+
+                    <!-- Second member -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="8dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/member_2_picture"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:src="@drawable/thomas"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Thomas Janabajab"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/baloo"
+                            android:textSize="14sp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+
+                    <!-- Third member -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/member_3_picture"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:src="@drawable/bertos"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="John P. Bertos"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/baloo"
+                            android:textSize="14sp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

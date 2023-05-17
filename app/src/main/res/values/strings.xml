@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="language_english" translatable="false">English</string>
+    <string name="language_japanese" translatable="false">Japanese</string>
+    <string name="language_chinese" translatable="false">Chinese</string>
+    <!--    About App-->
+    <string name="app_name">PayHive</string>
+    <!--Main Layout-->
+    <!--Login Activity-->
+    <string name="login_your_account" translatable="false">Login your account</string>
+    <string name="email_hint" translatable="false">Email</string>
+    <string name="password_hint" translatable="false">Password</string>
+    <string name="show_password" translatable="false">Show Password</string>
+    <string name="login_button_text" translatable="false">Login</string>
+    <string name="dont_have_account" translatable="false">Don\'t have an account?</string>
+    <string name="create_account_button_text" translatable="false">Create Account</string>
+
+    <!--Register Activity-->
+    <string name="activity_register_create_account" translatable="false">Create your account</string>
+    <string name="activity_register_full_name_hint" translatable="false">Full Name</string>
+    <string name="activity_register_email_hint" translatable="false">Email</string>
+    <string name="activity_register_phone_number_hint" translatable="false">Phone Number</string>
+    <string name="activity_register_password_hint" translatable="false">Password</string>
+    <string name="activity_register_register_button" translatable="false">Register</string>
+    <string name="activity_register_already_have_account" translatable="false">Already have an account?</string>
+    <string name="activity_register_login_button" translatable="false">Login</string>
+    <!--Fragment Wallet-->
+    <string name="totalbalance_TextView" translatable="false">Total Balance</string>
+    <string name="fragment_wallet_assets" translatable="false">Assets</string>
+    <!--Exchange Activity-->
+    <string name="fragment_exchange_cashin_button" translatable="false">Cash In</string>
+    <string name="fragment_exchange_transfer_button" translatable="false">Transfer</string>
+    <string name="fragment_exchange_transaction_history" translatable="false">Transaction History</string>
+
+    <!--Settings Activity-->
+    <string name="fragment_settings_general" translatable="false">General Settings</string>
+    <string name="fragment_settings_editprofile" translatable="false">Edit Profile</string>
+    <string name="fragment_settings_language" translatable="false">Language</string>
+    <string name="fragment_settings_about" translatable="false">About Us</string>
+    <string name="fragment_settings_termsandcondi" translatable="false">Terms and Conditions</string>
+    <string name="fragment_settings_privacypolicy" translatable="false">Privacy Policy</string>
+    <string name="fragment_settings_logout_button" translatable="false">Log Out</string>
+
+    <!--Exchange Activity-->
+    <string name="fragment_exchange_stats" translatable="false">Trading View</string>
+
+
+</resources>

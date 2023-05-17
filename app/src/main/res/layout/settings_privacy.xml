@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Background"
+    android:orientation="vertical"
+    tools:context=".SettingsPrivacyPolicy">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/header_rectangle"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleTextColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/rectangle_background"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:rotation="270"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/arrow"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                <View
+                    android:layout_width="29dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/fragment_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:text="Privacy Policy"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="88dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PayHive Privacy Policy"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PayHive is committed to protecting the privacy of our users. This Privacy Policy explains how we collect, use, and share information in connection with our digital wallet services."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Information We Collect and Use"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We collect the information that you provide to us when you use our services. This may include your name, email address, phone number, and transaction information. We use this information to provide and improve the PayHive services, and to communicate with you about your account."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We also collect information automatically when you use our services, including your IP address, device information, and usage information. We use this information to operate and improve our services, to provide support and troubleshooting, and to analyze trends and usage patterns."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. Sharing Your Information"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We do not sell, rent, or share your personal information with third parties for their marketing purposes. We may share your information with our service providers, such as hosting providers, payment processors, and fraud detection services, as necessary to provide our services to you."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We may also share your information to comply with legal obligations, to protect our rights or the rights of others, or in connection with a merger, acquisition, or sale of assets."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. Security"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We take reasonable measures to protect your information from unauthorized access, alteration, or destruction. We use encryption and secure protocols to transmit sensitive data, and we store your information on secure servers. However, no method of transmission or storage is 100% secure, and we cannot guarantee the security of your information."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. Teenage Privacy"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Our services are not directed to teen's under the age of 18, and we do not knowingly collect personal information from children. If we become aware that we have collected personal information from a teen's under the age of 18, we will take appropriate steps to remove the information from our servers."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5. Changes to this Privacy Policy"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We may update this Privacy Policy from time to time. If we make material changes, we will notify you by email or by posting a notice on our website. Your continued use of our services after the effective date of the updated Privacy Policy constitutes your acceptance of the revised terms."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

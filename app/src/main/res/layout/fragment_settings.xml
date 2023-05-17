@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background">
+
+    <!-- Top View -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profilepic">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/profile_fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:fontFamily="@font/baloo"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:fontFamily="@font/baloo"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_background"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="@string/fragment_settings_general"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <!-- Main LinearLayout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!-- Edit Profile  -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <!-- Edit Profile ImageView -->
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/editprofile" />
+
+                        <!-- Edit Profile TextView -->
+                        <TextView
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/baloo"
+                            android:text="@string/fragment_settings_editprofile"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+
+                        <!-- Edit Profile ImageButton -->
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:background="@android:color/transparent"
+                            android:rotation="90"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/arrow"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+                    <!-- Language -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/language" />
+
+                        <TextView
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/baloo"
+                            android:text="@string/fragment_settings_language"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/language_spinner"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:padding="8dp"
+                            android:background="@drawable/arrow"
+                            android:rotation="180"
+                            android:scaleType="fitCenter" />
+
+                    </LinearLayout>
+                    <!--About-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/about" />
+
+                        <TextView
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/baloo"
+                            android:text="@string/fragment_settings_about"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+
+                        <ImageButton
+                            android:id="@+id/about_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:background="@android:color/transparent"
+                            android:rotation="90"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/arrow"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+                    <!--TermsAndCondi-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/termsandcondi" />
+
+                        <TextView
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/baloo"
+                            android:text="@string/fragment_settings_termsandcondi"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+
+                        <ImageButton
+                            android:id="@+id/termsandcondi_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:background="@android:color/transparent"
+                            android:rotation="90"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/arrow"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+                    <!--Privacy-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/privacy" />
+
+                        <TextView
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/baloo"
+                            android:text="@string/fragment_settings_privacypolicy"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+
+                        <ImageButton
+                            android:id="@+id/privacy_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:background="@android:color/transparent"
+                            android:rotation="90"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/arrow"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/logout_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/Honey"
+                        android:fontFamily="@font/baloo"
+                        android:gravity="center"
+                        android:paddingVertical="0sp"
+                        android:text="@string/fragment_settings_logout_button"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:cornerRadius="12sp"
+                        app:strokeColor="@color/red"
+                        app:strokeWidth="3dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

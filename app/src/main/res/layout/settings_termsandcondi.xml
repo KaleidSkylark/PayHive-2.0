@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/rectangle_background"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleTextColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:rotation="270"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/arrow"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                <View
+                    android:layout_width="29dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/fragment_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:text="Terms &amp; Conditions"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="88dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms and Conditions"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome to PayHive, a cryptocurrency wallet app that allows you to securely store, manage, and transfer your digital assets. By using PayHive, you agree to be bound by these Terms and Conditions, which govern your use of the app."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eligibility"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PayHive is only available to individuals who are 18 years of age or older. By using PayHive, you represent and warrant that you are at least 18 years of age."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms of Service"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. PayHive is a cryptocurrency wallet app that allows you to securely store, manage, and transfer digital assets."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. You are responsible for maintaining the confidentiality of your login credentials, including your username and password. You are also responsible for any activity that occurs under your account."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. You agree to use PayHive only for lawful purposes and in compliance with all applicable laws and regulations."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. You agree not to use PayHive to engage in any activity that could damage, disable, overburden, or impair the app or interfere with any other user's use of the app."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5. PayHive is not responsible for any loss, damage, or theft of your digital assets or any other consequences resulting from your use of the app."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6. PayHive may modify or update these Terms and Conditions at any time, without prior notice. Your continued use of the app after any modification or update to these Terms and Conditions constitutes your acceptance of the modified or updated terms."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7. PayHive may terminate or suspend your use of the app at any time, for any reason, without prior notice."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Intellectual Property"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. PayHive and its content, including but not limited to text, graphics, logos, icons, app design, and software, are owned by PayHive or its licensors and are protected by copyright, trademark, and other intellectual property laws."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. You may not use, reproduce, distribute, modify, or create derivative works of the PayHive app or its content without the express written permission of PayHive."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disclaimer of Warranties and Limitation of Liability"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. PayHive provides the app on an AS IS basis and does not warrant that the app will be error-free or uninterrupted. PayHive disclaims all warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. In no event shall PayHive be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with your use of the app, including but not limited to lost profits, lost data, or business interruption."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eligibility"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indemnification"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You agree to indemnify and hold harmless PayHive, its directors, officers, employees, and agents, from and against any claims, actions, suits, or proceedings, as well as any and all losses, damages, and expenses, including reasonable attorneys' fees, arising from or related to your use of the app or a violation of these Terms and Conditions."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Governing Law and Jurisdiction"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="These Terms and Conditions shall be governed by and construed in accordance with the laws of the jurisdiction where PayHive is located, without giving effect to any principles of conflicts of law. Any legal action or proceeding arising out of or related to these Terms and Conditions or your use of the app shall be brought exclusively in a court of competent jurisdiction in that jurisdiction."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entire Agreement"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="These Terms and Conditions constitute the entire agreement between you and PayHive regarding your use of the app and supersede all prior agreements and understandings, whether written or oral, between you and PayHive."
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
