@@ -12,6 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -21,11 +23,16 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ExchangeFragment extends Fragment {
     private DatabaseReference currentUserDataRef;
     private Button CashinButton;
     private Button TransferButton;
+    private List<Transaction> transactions;
+    private TransactionAdapter transactionAdapter;
+    private RecyclerView recyclerView;
 
     @Nullable
     @Override
@@ -35,6 +42,12 @@ public class ExchangeFragment extends Fragment {
         // Initialize views
         CashinButton = view.findViewById(R.id.cashInButton);
         TransferButton = view.findViewById(R.id.transferButton);
+
+        transactions = new ArrayList<>();
+        transactionAdapter = new TransactionAdapter(transactions);
+        recyclerView = view.findViewById(R.id.TransactionrecyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setAdapter(transactionAdapter);
 
         // Get a reference to currentUserDataRef
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
@@ -77,7 +90,28 @@ public class ExchangeFragment extends Fragment {
                 startActivity(new Intent(getActivity(), ExchangeTransfer.class));
             }
         });
-
+        fetchTransactions();
         return view;
+    }
+    private void fetchTransactions() {
+        currentUserDataRef.child("transactions").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                transactions.clear();
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    Transaction transaction = snapshot.getValue(Transaction.class);
+                    transactions.add(transaction);
+                    Log.d("ExchangeFragment", "Transaction fetched: " + transaction.toString());
+                }
+                transactions.add(new Transaction("1", "TRIAL", 11));
+                transactions.add(new Transaction("2", "BETA", 11));
+                transactionAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                // Handle error
+            }
+        });
     }
 }

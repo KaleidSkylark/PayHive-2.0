@@ -8,6 +8,8 @@ public class UserData {
     private String password;
     private long walletTotalBalance;
 
+
+
     // Default constructor for Firebase database
     public UserData() {}
 

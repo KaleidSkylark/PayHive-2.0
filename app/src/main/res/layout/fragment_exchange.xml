@@ -88,122 +88,7 @@
                     app:strokeColor="@color/black"
                     app:strokeWidth="3dp" />
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:orientation="vertical"
-                android:background="@drawable/rectangle_background">
 
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Cryptocurrency Converter"
-                    android:textSize="18sp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/baloo" />
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center">
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColorHint="@color/white"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-
-                        <AutoCompleteTextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/baloo"
-                            android:hint="Bitcoin"
-                            app:hintTextColor="@color/Honey"
-                            android:background="@drawable/rectangle_background">
-
-                        </AutoCompleteTextView>
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:inputType="numberDecimal"
-                        android:hint="Enter amount of cryptocurrency"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/baloo"
-                        android:textSize="16sp"/>/>
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Exchange Rate: 1 BTC = $58680.95"
-                    android:textSize="18sp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/baloo" />/>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center">
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColorHint="@color/white"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-
-                        <AutoCompleteTextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/baloo"
-                            android:hint="Bitcoin"
-                            app:hintTextColor="@color/Honey"
-                            android:background="@drawable/rectangle_background">
-
-                        </AutoCompleteTextView>
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:inputType="none"
-                        android:hint="Enter amount of cryptocurrency"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/baloo"
-                        android:textSize="16sp"/>
-
-                </LinearLayout>
-
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Convert"
-                    android:textSize="14sp"
-                    android:layout_gravity="center"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/baloo"
-                    android:backgroundTint="@color/Honey"
-                    app:cornerRadius="12sp"
-                    app:strokeColor="@color/black"
-                    app:strokeWidth="3dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Result: $0"
-                    android:textSize="18sp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/baloo" />/>
-
-            </LinearLayout>
         </LinearLayout>
 
         <!-- Rectangle for Crypto Coin Balance and Rate of Exchanges -->
@@ -224,7 +109,7 @@
                 android:textSize="16sp" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
+                android:id="@+id/TransactionrecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fillViewport="true" />

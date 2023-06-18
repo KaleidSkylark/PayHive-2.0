@@ -68,9 +68,6 @@ public class RegisterActivity extends AppCompatActivity {
                                 // Set initial wallet balance to PHP 50,000
                                 userData.setWalletTotalBalance((long) 50000);
                                 userDataRef.child(user.getUid()).setValue(userData);
-
-                                DatabaseReference userBalanceRef = mDatabase.getReference("UserTotalBalance");
-                                userBalanceRef.child(user.getUid()).setValue(50000);
                             }
                             showToast("Account created successfully!");
                             startActivity(new Intent(RegisterActivity.this, MainLayoutActivity.class));

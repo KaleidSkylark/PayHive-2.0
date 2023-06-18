@@ -46,7 +46,6 @@
                 android:textSize="16sp" />
 
             <WebView
-                android:id="@+id/bitcoin"
                 android:layout_width="350dp"
                 android:layout_height="300dp"
                 tools:ignore="WebViewLayout">
